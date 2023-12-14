@@ -1,0 +1,14 @@
+21570 [JettyServerThreadPool-45] ERROR dk.lyngby.routes.Routes - GET /api/v1/hotels/1 200 
+15084 [JettyServerThreadPool-48] ERROR dk.lyngby.routes.Routes - GET /api/v1/hotels/1 200 
+2197554 [JettyServerThreadPool-25] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+2298943 [JettyServerThreadPool-23] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+4964135 [JettyServerThreadPool-25] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+4966174 [JettyServerThreadPool-23] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+5123682 [JettyServerThreadPool-22] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+5125103 [JettyServerThreadPool-25] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+5144915 [JettyServerThreadPool-25] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+5151851 [JettyServerThreadPool-25] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+5947608 [JettyServerThreadPool-24] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+5957042 [JettyServerThreadPool-24] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+6343065 [JettyServerThreadPool-25] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+6385354 [JettyServerThreadPool-28] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password

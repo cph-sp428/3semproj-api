@@ -1,0 +1,2 @@
+21570 [JettyServerThreadPool-45] ERROR dk.lyngby.routes.Routes - GET /api/v1/hotels/1 200 
+15084 [JettyServerThreadPool-48] ERROR dk.lyngby.routes.Routes - GET /api/v1/hotels/1 200 

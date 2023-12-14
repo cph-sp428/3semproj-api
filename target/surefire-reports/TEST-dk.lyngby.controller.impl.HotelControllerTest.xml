@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dk.lyngby.controller.impl.HotelControllerTest" time="15.962" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\sebas\Downloads\hotel_exercise_rest-security_jon\hotel_exercise_rest-security_jon\target\test-classes;C:\Users\sebas\Downloads\hotel_exercise_rest-security_jon\hotel_exercise_rest-security_jon\target\classes;C:\Users\sebas\.m2\repository\io\javalin\javalin-bundle\5.6.1\javalin-bundle-5.6.1.jar;C:\Users\sebas\.m2\repository\io\javalin\javalin\5.6.1\javalin-5.6.1.jar;C:\Users\sebas\.m2\repository\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-server\11.0.15\jetty-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-http\11.0.15\jetty-http-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-webapp\11.0.15\jetty-webapp-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-servlet\11.0.15\jetty-servlet-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-security\11.0.15\jetty-security-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-xml\11.0.15\jetty-xml-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-server\11.0.15\websocket-jetty-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-common\11.0.15\websocket-jetty-common-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-core-common\11.0.15\websocket-core-common-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\11.0.15\websocket-servlet-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-core-server\11.0.15\websocket-core-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-annotations\11.0.15\jetty-annotations-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-plus\11.0.15\jetty-plus-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-jndi\11.0.15\jetty-jndi-11.0.15.jar;C:\Users\sebas\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\sebas\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\sebas\.m2\repository\org\ow2\asm\asm-commons\9.5\asm-commons-9.5.jar;C:\Users\sebas\.m2\repository\org\ow2\asm\asm-tree\9.5\asm-tree-9.5.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-api\11.0.15\websocket-jetty-api-11.0.15.jar;C:\Users\sebas\.m2\repository\io\javalin\javalin-testtools\5.6.1\javalin-testtools-5.6.1.jar;C:\Users\sebas\.m2\repository\com\squareup\okhttp3\okhttp\4.11.0\okhttp-4.11.0.jar;C:\Users\sebas\.m2\repository\com\squareup\okio\okio\3.2.0\okio-3.2.0.jar;C:\Users\sebas\.m2\repository\com\squareup\okio\okio-jvm\3.2.0\okio-jvm-3.2.0.jar;C:\Users\sebas\.m2\repository\io\javalin\javalin-micrometer\5.6.1\javalin-micrometer-5.6.1.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-core\1.10.1\micrometer-core-1.10.1.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-commons\1.10.1\micrometer-commons-1.10.1.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-observation\1.10.1\micrometer-observation-1.10.1.jar;C:\Users\sebas\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\sebas\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-jetty11\1.10.1\micrometer-jetty11-1.10.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\module\jackson-module-kotlin\2.15.0\jackson-module-kotlin-2.15.0.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.5.32\kotlin-reflect-1.5.32.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.11.0\brotli4j-1.11.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\service\1.11.0\service-1.11.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.11.0\native-windows-x86_64-1.11.0.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\http2\http2-server\11.0.15\http2-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\http2\http2-common\11.0.15\http2-common-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\http2\http2-hpack\11.0.15\http2-hpack-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-alpn-conscrypt-server\11.0.15\jetty-alpn-conscrypt-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\conscrypt\conscrypt-openjdk-uber\2.5.2\conscrypt-openjdk-uber-2.5.2.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-alpn-server\11.0.15\jetty-alpn-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-io\11.0.15\jetty-io-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-util\11.0.15\jetty-util-11.0.15.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.8.21\kotlin-stdlib-jdk8-1.8.21.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.8.21\kotlin-stdlib-1.8.21.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.8.21\kotlin-stdlib-common-1.8.21.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.8.21\kotlin-stdlib-jdk7-1.8.21.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\sebas\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\sebas\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\sebas\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.0.1\nimbus-jose-jwt-9.0.1.jar;C:\Users\sebas\.m2\repository\com\github\stephenc\jcip\jcip-annotations\1.0-1\jcip-annotations-1.0-1.jar;C:\Users\sebas\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\sebas\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\sebas\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\sebas\.m2\repository\org\hibernate\orm\hibernate-core\6.2.4.Final\hibernate-core-6.2.4.Final.jar;C:\Users\sebas\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\sebas\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\sebas\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\sebas\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\sebas\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\sebas\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\sebas\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\sebas\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\sebas\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\sebas\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\sebas\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\sebas\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\sebas\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\sebas\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\sebas\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\sebas\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\sebas\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\sebas\.m2\repository\org\hibernate\orm\hibernate-hikaricp\6.2.4.Final\hibernate-hikaricp-6.2.4.Final.jar;C:\Users\sebas\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\sebas\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\sebas\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\sebas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\sebas\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\sebas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\sebas\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;C:\Users\sebas\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sebas\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\sebas\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\sebas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\sebas\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\sebas\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\sebas\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\sebas\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\sebas\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\sebas\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\sebas\.m2\repository\org\testcontainers\postgresql\1.18.0\postgresql-1.18.0.jar;C:\Users\sebas\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\sebas\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\sebas\.m2\repository\org\testcontainers\junit-jupiter\1.18.0\junit-jupiter-1.18.0.jar;C:\Users\sebas\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\sebas\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\sebas\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\sebas\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sebas\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\sebas\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sebas\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\sebas\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\sebas\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\sebas\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\sebas\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\sebas\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\sebas\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\sebas\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sebas\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sebas\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\sebas\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\sebas\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\sebas\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\sebas\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\sebas\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\sebas\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\sebas\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sebas\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Copenhagen"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\sebas\.jdks\corretto-17.0.9\bin"/>
+    <property name="sun.java.command" value="C:\Users\sebas\AppData\Local\Temp\surefire9466000489009292221\surefirebooter-20231206130711378_3.jar C:\Users\sebas\AppData\Local\Temp\surefire9466000489009292221 2023-12-06T13-07-11_064-jvmRun1 surefire-20231206130711378_1tmp surefire_0-20231206130711378_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\sebas\Downloads\hotel_exercise_rest-security_jon\hotel_exercise_rest-security_jon\target\test-classes;C:\Users\sebas\Downloads\hotel_exercise_rest-security_jon\hotel_exercise_rest-security_jon\target\classes;C:\Users\sebas\.m2\repository\io\javalin\javalin-bundle\5.6.1\javalin-bundle-5.6.1.jar;C:\Users\sebas\.m2\repository\io\javalin\javalin\5.6.1\javalin-5.6.1.jar;C:\Users\sebas\.m2\repository\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-server\11.0.15\jetty-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-http\11.0.15\jetty-http-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-webapp\11.0.15\jetty-webapp-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-servlet\11.0.15\jetty-servlet-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-security\11.0.15\jetty-security-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-xml\11.0.15\jetty-xml-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-server\11.0.15\websocket-jetty-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-common\11.0.15\websocket-jetty-common-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-core-common\11.0.15\websocket-core-common-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\11.0.15\websocket-servlet-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-core-server\11.0.15\websocket-core-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-annotations\11.0.15\jetty-annotations-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-plus\11.0.15\jetty-plus-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-jndi\11.0.15\jetty-jndi-11.0.15.jar;C:\Users\sebas\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\sebas\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\sebas\.m2\repository\org\ow2\asm\asm-commons\9.5\asm-commons-9.5.jar;C:\Users\sebas\.m2\repository\org\ow2\asm\asm-tree\9.5\asm-tree-9.5.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-api\11.0.15\websocket-jetty-api-11.0.15.jar;C:\Users\sebas\.m2\repository\io\javalin\javalin-testtools\5.6.1\javalin-testtools-5.6.1.jar;C:\Users\sebas\.m2\repository\com\squareup\okhttp3\okhttp\4.11.0\okhttp-4.11.0.jar;C:\Users\sebas\.m2\repository\com\squareup\okio\okio\3.2.0\okio-3.2.0.jar;C:\Users\sebas\.m2\repository\com\squareup\okio\okio-jvm\3.2.0\okio-jvm-3.2.0.jar;C:\Users\sebas\.m2\repository\io\javalin\javalin-micrometer\5.6.1\javalin-micrometer-5.6.1.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-core\1.10.1\micrometer-core-1.10.1.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-commons\1.10.1\micrometer-commons-1.10.1.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-observation\1.10.1\micrometer-observation-1.10.1.jar;C:\Users\sebas\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\sebas\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\sebas\.m2\repository\io\micrometer\micrometer-jetty11\1.10.1\micrometer-jetty11-1.10.1.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\module\jackson-module-kotlin\2.15.0\jackson-module-kotlin-2.15.0.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.5.32\kotlin-reflect-1.5.32.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.11.0\brotli4j-1.11.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\service\1.11.0\service-1.11.0.jar;C:\Users\sebas\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.11.0\native-windows-x86_64-1.11.0.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\http2\http2-server\11.0.15\http2-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\http2\http2-common\11.0.15\http2-common-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\http2\http2-hpack\11.0.15\http2-hpack-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-alpn-conscrypt-server\11.0.15\jetty-alpn-conscrypt-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\conscrypt\conscrypt-openjdk-uber\2.5.2\conscrypt-openjdk-uber-2.5.2.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-alpn-server\11.0.15\jetty-alpn-server-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-io\11.0.15\jetty-io-11.0.15.jar;C:\Users\sebas\.m2\repository\org\eclipse\jetty\jetty-util\11.0.15\jetty-util-11.0.15.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.8.21\kotlin-stdlib-jdk8-1.8.21.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.8.21\kotlin-stdlib-1.8.21.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.8.21\kotlin-stdlib-common-1.8.21.jar;C:\Users\sebas\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.8.21\kotlin-stdlib-jdk7-1.8.21.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\sebas\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\sebas\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\sebas\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\sebas\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.0.1\nimbus-jose-jwt-9.0.1.jar;C:\Users\sebas\.m2\repository\com\github\stephenc\jcip\jcip-annotations\1.0-1\jcip-annotations-1.0-1.jar;C:\Users\sebas\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\sebas\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\sebas\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\sebas\.m2\repository\org\hibernate\orm\hibernate-core\6.2.4.Final\hibernate-core-6.2.4.Final.jar;C:\Users\sebas\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\sebas\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\sebas\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\sebas\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\sebas\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\sebas\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\sebas\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\sebas\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\sebas\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\sebas\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\sebas\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\sebas\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\sebas\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\sebas\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\sebas\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\sebas\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\sebas\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\sebas\.m2\repository\org\hibernate\orm\hibernate-hikaricp\6.2.4.Final\hibernate-hikaricp-6.2.4.Final.jar;C:\Users\sebas\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\sebas\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\sebas\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\sebas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\sebas\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\sebas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\sebas\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\sebas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;C:\Users\sebas\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sebas\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\sebas\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\sebas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\sebas\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\sebas\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\sebas\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\sebas\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\sebas\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\sebas\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\sebas\.m2\repository\org\testcontainers\postgresql\1.18.0\postgresql-1.18.0.jar;C:\Users\sebas\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\sebas\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\sebas\.m2\repository\org\testcontainers\junit-jupiter\1.18.0\junit-jupiter-1.18.0.jar;C:\Users\sebas\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\sebas\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\sebas\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\sebas\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sebas\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\sebas\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\sebas\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sebas\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\sebas\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\sebas\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\sebas\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\sebas\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\sebas\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\sebas\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\sebas\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sebas\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sebas\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\sebas\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\sebas\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\sebas\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\sebas\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\sebas\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\sebas\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\sebas\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\sebas\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sebas\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sebas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Users\sebas\.jdks\corretto-17.0.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\sebas\Downloads\hotel_exercise_rest-security_jon\hotel_exercise_rest-security_jon"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sebas\AppData\Local\Temp\surefire9466000489009292221\surefirebooter-20231206130711378_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+8-LTS"/>
+    <property name="user.name" value="sebas"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.9.8.1"/>
+    <property name="localRepository" value="C:\Users\sebas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="jetty.git.hash" value="5bc5e562c8d05c5862505aebe5cf83a61bdbcb96"/>
+    <property name="java.io.tmpdir" value="C:\Users\sebas\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.2.5"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="C:\Users\sebas\Downloads\hotel_exercise_rest-security_jon\hotel_exercise_rest-security_jon"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\sebas\.jdks\corretto-17.0.9\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\sebas\AppData\Local\Microsoft\WindowsApps;C:\Users\sebas\AppData\Local\GitHubDesktop\bin;C:\Users\sebas\AppData\Roaming\npm;C:\Users\sebas\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.9+8-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="create" classname="dk.lyngby.controller.impl.HotelControllerTest" time="1.442">
+    <system-out><![CDATA[13:07:13,334 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.7
+13:07:13,361 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:07:13,363 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/sebas/Downloads/hotel_exercise_rest-security_jon/hotel_exercise_rest-security_jon/target/classes/logback.xml]
+13:07:13,364 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@1fd14d74 - Resource [logback.xml] occurs multiple times on the classpath.
+13:07:13,364 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@1fd14d74 - Resource [logback.xml] occurs at [file:/C:/Users/sebas/Downloads/hotel_exercise_rest-security_jon/hotel_exercise_rest-security_jon/target/classes/logback.xml]
+13:07:13,364 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@1fd14d74 - Resource [logback.xml] occurs at [jar:file:/C:/Users/sebas/.m2/repository/io/javalin/javalin-bundle/5.6.1/javalin-bundle-5.6.1.jar!/logback.xml]
+13:07:13,503 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1701864433500)
+13:07:13,503 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - No 'scanPeriod' specified. Defaulting to 1 minutes
+13:07:13,504 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Will scan for changes in [file:/C:/Users/sebas/Downloads/hotel_exercise_rest-security_jon/hotel_exercise_rest-security_jon/target/classes/logback.xml] 
+13:07:13,504 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+13:07:13,512 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+13:07:13,512 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:07:13,520 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:07:13,560 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+13:07:13,560 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+13:07:13,565 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:07:13,569 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1446922577 - setting totalSizeCap to 10 MB
+13:07:13,574 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1446922577 - Will use gz compression
+13:07:13,575 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1446922577 - Will use the pattern src/main/resources/logs/application.%d{yyyy-MM-dd} for the active file
+13:07:13,579 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'src/main/resources/logs/application.%d{yyyy-MM-dd}.gz'.
+13:07:13,579 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+13:07:13,581 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2023-12-06T12:02:04.424Z
+13:07:13,585 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: src/main/resources/logs/application.log
+13:07:13,585 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [src/main/resources/logs/application.log]
+13:07:13,589 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [dk.lyngby] to INFO
+13:07:13,592 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [dk.lyngby] to false
+13:07:13,592 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[dk.lyngby]
+13:07:13,593 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[dk.lyngby]
+13:07:13,593 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+13:07:13,593 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+13:07:13,593 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@4066c471 - End of configuration.
+13:07:13,595 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@2b175c00 - Registering current configuration as safe fallback point
+
+2023-12-06 13:07:13,693 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.hibernate.Version&amp#27;[0;39m - &amp#27;[32mHHH000412: Hibernate ORM core version 6.2.4.Final
+&amp#27;[0;39m2023-12-06 13:07:13,702 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.hibernate.cfg.Environment&amp#27;[0;39m - &amp#27;[32mHHH000406: Using bytecode reflection optimizer
+&amp#27;[0;39mHibernate Java Config serviceRegistry created
+2023-12-06 13:07:14,226 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.HikariDataSource&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Starting...
+&amp#27;[0;39m2023-12-06 13:07:14,313 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.utility.ImageNameSubstitutor&amp#27;[0;39m - &amp#27;[32mImage name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+&amp#27;[0;39m2023-12-06 13:07:14,664 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.d.DockerClientProviderStrategy&amp#27;[0;39m - &amp#27;[32mLoaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+&amp#27;[0;39m2023-12-06 13:07:15,517 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.d.DockerClientProviderStrategy&amp#27;[0;39m - &amp#27;[32mFound Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+&amp#27;[0;39m2023-12-06 13:07:15,520 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mDocker host IP address is localhost
+&amp#27;[0;39m2023-12-06 13:07:15,564 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mConnected to docker: 
+  Server Version: 24.0.6
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 7913 MB
+&amp#27;[0;39m2023-12-06 13:07:15,644 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mCreating container for image: testcontainers/ryuk:0.4.0
+&amp#27;[0;39m2023-12-06 13:07:16,348 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mContainer testcontainers/ryuk:0.4.0 is starting: dfc3b038c94f2fb56d466bd4a7ab1223501479b193aafc0c29edb7b2ddacfe1a
+&amp#27;[0;39m2023-12-06 13:07:17,060 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mContainer testcontainers/ryuk:0.4.0 started in PT1.4650634S
+&amp#27;[0;39m2023-12-06 13:07:17,071 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.utility.RyukResourceReaper&amp#27;[0;39m - &amp#27;[32mRyuk started - will monitor and terminate Testcontainers containers on JVM exit
+&amp#27;[0;39m2023-12-06 13:07:17,072 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mChecking the system...
+&amp#27;[0;39m2023-12-06 13:07:17,073 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32m?? Docker server version should be at least 1.6.0
+&amp#27;[0;39m2023-12-06 13:07:17,074 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mCreating container for image: postgres:15.3-alpine3.18
+&amp#27;[0;39m2023-12-06 13:07:17,135 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer postgres:15.3-alpine3.18 is starting: d7ebed07d579b0798a6043babce14a08b5e1607180816fe35b16fca25d232c4c
+&amp#27;[0;39m2023-12-06 13:07:20,845 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer postgres:15.3-alpine3.18 started in PT3.7702387S
+&amp#27;[0;39m2023-12-06 13:07:20,846 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer is started (JDBC URL: jdbc:postgresql://localhost:57214/test?loggerLevel=OFF)
+&amp#27;[0;39m2023-12-06 13:07:21,091 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.pool.HikariPool&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Added connection org.testcontainers.jdbc.ConnectionWrapper@506a1372
+&amp#27;[0;39m2023-12-06 13:07:21,093 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.HikariDataSource&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Start completed.
+&amp#27;[0;39m2023-12-06 13:07:21,927 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.h.b.i.BytecodeProviderInitiator&amp#27;[0;39m - &amp#27;[32mHHH000021: Bytecode provider name : bytebuddy
+&amp#27;[0;39m2023-12-06 13:07:23,051 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.h.e.t.j.p.i.JtaPlatformInitiator&amp#27;[0;39m - &amp#27;[32mHHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+&amp#27;[0;39mHibernate: alter table if exists room drop constraint if exists FKdosq3ww4h9m2osim6o0lugng8
+2023-12-06 13:07:23,282 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-12-06 13:07:23,283 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mrelation "room" does not exist, skipping
+&amp#27;[0;39mHibernate: alter table if exists user_roles drop constraint if exists FKdcdh0gl1mdce42vy0klyio6fi
+2023-12-06 13:07:23,284 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-12-06 13:07:23,284 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mrelation "user_roles" does not exist, skipping
+&amp#27;[0;39mHibernate: alter table if exists user_roles drop constraint if exists FKscvbq0n9bo03s7w6ujfyrtg4a
+2023-12-06 13:07:23,286 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-12-06 13:07:23,286 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mrelation "user_roles" does not exist, skipping
+&amp#27;[0;39mHibernate: drop table if exists hotel cascade
+2023-12-06 13:07:23,287 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-12-06 13:07:23,288 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "hotel" does not exist, skipping
+&amp#27;[0;39mHibernate: drop table if exists roles cascade
+2023-12-06 13:07:23,290 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-12-06 13:07:23,290 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "roles" does not exist, skipping
+&amp#27;[0;39mHibernate: drop table if exists room cascade
+2023-12-06 13:07:23,291 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-12-06 13:07:23,291 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "room" does not exist, skipping
+&amp#27;[0;39mHibernate: drop table if exists user_roles cascade
+2023-12-06 13:07:23,294 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-12-06 13:07:23,294 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "user_roles" does not exist, skipping
+&amp#27;[0;39mHibernate: drop table if exists users cascade
+2023-12-06 13:07:23,295 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-12-06 13:07:23,295 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "users" does not exist, skipping
+&amp#27;[0;39mHibernate: create table hotel (hotel_id serial not null, hotel_address varchar(255) not null, hotel_name varchar(255) not null unique, hotel_type varchar(255) not null check (hotel_type in ('BUDGET','STANDARD','LUXURY')), primary key (hotel_id))
+Hibernate: create table roles (role_name varchar(20) not null, primary key (role_name))
+Hibernate: create table room (hotel_id integer not null, price numeric(38,2) not null, room_id serial not null, room_number integer not null, room_type varchar(255) not null check (room_type in ('SINGLE','DOUBLE','SUITE')), primary key (room_id))
+Hibernate: create table user_roles (role_name varchar(20) not null, user_name varchar(25) not null, primary key (role_name, user_name))
+Hibernate: create table users (user_name varchar(25) not null, user_password varchar(255) not null, primary key (user_name))
+Hibernate: alter table if exists room add constraint FKdosq3ww4h9m2osim6o0lugng8 foreign key (hotel_id) references hotel
+Hibernate: alter table if exists user_roles add constraint FKdcdh0gl1mdce42vy0klyio6fi foreign key (role_name) references roles
+Hibernate: alter table if exists user_roles add constraint FKscvbq0n9bo03s7w6ujfyrtg4a foreign key (user_name) references users
+2023-12-06 13:07:23,561 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStarting Javalin ...
+&amp#27;[0;39m2023-12-06 13:07:23,719 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mjetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 17.0.9+8-LTS
+&amp#27;[0;39m2023-12-06 13:07:23,776 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.s.s.DefaultSessionIdManager&amp#27;[0;39m - &amp#27;[32mSession workerName=node0
+&amp#27;[0;39m2023-12-06 13:07:23,791 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStarted i.j.j.@285c63cf{/api/v1,null,AVAILABLE}
+&amp#27;[0;39m2023-12-06 13:07:23,825 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStarted ServerConnector@6da9541c{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-12-06 13:07:23,828 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStarted Server@1906f982{STARTING}[11.0.15,sto=0] @11930ms
+&amp#27;[0;39m2023-12-06 13:07:23,828 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32m
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+&amp#27;[0;39m2023-12-06 13:07:23,832 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mListening on http://localhost:7777/api/v1
+&amp#27;[0;39m2023-12-06 13:07:23,844 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYou are running Javalin 5.6.1 (released June 22, 2023. Your Javalin version is 166 days old. Consider checking for a newer version.).
+&amp#27;[0;39m2023-12-06 13:07:23,844 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin started in 286ms \o/
+&amp#27;[0;39mHibernate: insert into roles (role_name) values (?)
+Hibernate: insert into roles (role_name) values (?)
+Hibernate: insert into users (user_password,user_name) values (?,?)
+Hibernate: insert into users (user_password,user_name) values (?,?)
+Hibernate: insert into user_roles (user_name,role_name) values (?,?)
+Hibernate: insert into user_roles (user_name,role_name) values (?,?)
+Hibernate: select u1_0.user_name,r1_0.user_name,r1_1.role_name,u1_0.user_password from users u1_0 left join (user_roles r1_0 join roles r1_1 on r1_1.role_name=r1_0.role_name) on u1_0.user_name=r1_0.user_name where u1_0.user_name=?
+2023-12-06 13:07:25,959 [JettyServerThreadPool-49] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32m Request 0 - POST /api/v1/auth/login was handled with status code 200 OK
+&amp#27;[0;39mHibernate: select u1_0.user_name,r1_0.user_name,r1_1.role_name,u1_0.user_password from users u1_0 left join (user_roles r1_0 join roles r1_1 on r1_1.role_name=r1_0.role_name) on u1_0.user_name=r1_0.user_name where u1_0.user_name=?
+2023-12-06 13:07:26,769 [JettyServerThreadPool-44] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32m Request 1 - POST /api/v1/auth/login was handled with status code 200 OK
+&amp#27;[0;39mHibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+2023-12-06 13:07:28,087 [JettyServerThreadPool-45] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32m Request 2 - POST /api/v1/hotels was handled with status code 201 Created
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+  <testcase name="delete" classname="dk.lyngby.controller.impl.HotelControllerTest" time="0.446">
+    <system-out><![CDATA[Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from hotel where hotel_id=?
+2023-12-06 13:07:28,390 [JettyServerThreadPool-42] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32m Request 3 - DELETE /api/v1/hotels/1 was handled with status code 204 No Content
+&amp#27;[0;39mHibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+2023-12-06 13:07:28,411 [JettyServerThreadPool-48] &amp#27;[1;31mERROR&amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32mGET /api/v1/hotels/1 200 
+&amp#27;[0;39m2023-12-06 13:07:28,686 [JettyServerThreadPool-48] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32m Request 4 - GET /api/v1/hotels/1 was handled with status code 404 Not Found
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+  <testcase name="update" classname="dk.lyngby.controller.impl.HotelControllerTest" time="0.171">
+    <system-out><![CDATA[Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Request method:	PUT
+Request URI:	http://localhost:7777/api/v1/hotels/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjcGhidXNpbmVzcy5kayIsInN1YiI6ImFkbWludGVzdCIsImV4cCI6MTcwMTg2ODA0NSwicm9sZXMiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW50ZXN0In0.n396g-zdxGcWNG7RyvwA8yVFOmuoPw1wuT3iyqx-uX4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "hotelName": "Bates Motel",
+    "hotelAddress": "Lyngby",
+    "hotelType": "LUXURY",
+    "rooms": [
+        
+    ]
+}
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: update hotel set hotel_address=?,hotel_name=?,hotel_type=? where hotel_id=?
+2023-12-06 13:07:28,795 [JettyServerThreadPool-49] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32m Request 5 - PUT /api/v1/hotels/2 was handled with status code 200 OK
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+  <testcase name="read" classname="dk.lyngby.controller.impl.HotelControllerTest" time="0.071">
+    <system-out><![CDATA[Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+2023-12-06 13:07:28,915 [JettyServerThreadPool-47] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32m Request 6 - GET /api/v1/hotels/1 was handled with status code 200 OK
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+  <testcase name="readAll" classname="dk.lyngby.controller.impl.HotelControllerTest" time="0.234">
+    <system-out><![CDATA[Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type from hotel h1_0
+Hibernate: select r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from room r1_0 where r1_0.hotel_id=?
+Hibernate: select r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from room r1_0 where r1_0.hotel_id=?
+2023-12-06 13:07:29,138 [JettyServerThreadPool-42] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mdk.lyngby.routes.Routes&amp#27;[0;39m - &amp#27;[32m Request 7 - GET /api/v1/hotels was handled with status code 200 OK
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+</testsuite>
